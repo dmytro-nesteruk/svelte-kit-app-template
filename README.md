@@ -1,38 +1,58 @@
-# create-svelte
+# Project template for [SvelteKit](https://kit.svelte.dev/) app.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+#### This template includes:
 
-## Creating a project
+- [Typescritpt](https://www.npmjs.com/package/typescript);
+- [SvelteKit](https://kit.svelte.dev/);
+- [ESlint](https://www.npmjs.com/package/eslint), [Prettier](https://www.npmjs.com/package/prettier), [StyleLint](https://www.npmjs.com/package/stylelint), [Editor config](https://editorconfig.org/), [husky](https://www.npmjs.com/package/husky), [LintStaged](https://www.npmjs.com/package/lint-staged) and related configs;
 
-If you're seeing this, you've probably already done this step. Congrats!
+#### Related packages:
+- [TailwindCSS](https://tailwindcss.com/);
+- [SASS](https://www.npmjs.com/package/sass);
+- [axios](https://www.npmjs.com/package/axios);
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+#### Requirements:
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- [node](https://nodejs.org/en/) version 14.18 +
 
-## Developing
+## Installation:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+    $ git clone https://github.com/m31odyWeb/svelte-kit-app-template.git <new project directory>
+    $ cd <new-project-directory>
+    $ rm -rf .git
+    $ git init -y
+    $ npm install
 
-```bash
-npm run dev
+## Available scripts:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+`npm run dev` - to start project in develompent mode;
 
-## Building
+`npm run build` - to build project;
 
-To create a production version of your app:
+`npm run preview` - to preview a builded project;
 
-```bash
-npm run build
-```
+`fix:code` - to fix JS and TS problems;
 
-You can preview the production build with `npm run preview`.
+`fix:styles` - to fix CSS and SCSS problems;
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+`format` - to fix CSS and SCSS problems and format code with [__prettier__](https://www.npmjs.com/package/prettier);
+
+## Configaration files:
+
+`tsconfig.json` - for configuring __typescript__;
+
+`vite.config.js` - for configuring __vite__;
+
+`svelte.config.js` - for configuring __svelte__;
+
+`tailwind.config.cjs` - for configuring __TailwindCSS__;
+
+`postcss.config.cjs` - for configuring __PostCSS__;
+
+`.eslintrc.cjs, .eslintrc.stage.cjs` - for configuring __ESLint__ for development and stage;
+
+`.stylelintrc.json` - for configuring __StyleLint__ for development and stage;
+
+`.prettierrc` - for configuring __prettier__ for development and stage;
+
+`.editorconfig` - for configuring __Editor config__;
