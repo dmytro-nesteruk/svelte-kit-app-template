@@ -20,7 +20,7 @@
     $ git clone https://github.com/m31odyWeb/svelte-kit-app-template.git <new project directory>
     $ cd <new-project-directory>
     $ rm -rf .git
-    $ git init -y
+    $ git init
     $ npm install
 
 ## Available scripts:
